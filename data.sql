@@ -1,0 +1,17 @@
+DROP DATABASE IF EXISTS P2_A01229551;
+CREATE DATABASE IF NOT EXISTS P2_A01229551;
+USE P2_A01229551;
+
+CREATE TABLE IF NOT EXISTS `Alumnos` (
+`id` INT NOT NULL AUTO_INCREMENT,
+`name` VARCHAR(150) NOT NULL,
+`enrollment_id` VARCHAR(80) NOT NULL,
+`email` VARCHAR(80),
+`major` VARCHAR(50),
+PRIMARY KEY(`id`)
+) DEFAULT CHARSET=utf8;
+
+INSERT INTO `Alumnos`
+(`name`, `enrollment_id`, `email`, `major`) VALUES
+("Oscar Moscosa", "A01229551", "A01229551@itesm.mx", "ITC"),
+("Fernanda De León", "A01111111", "A01111111@itesm.mx", "ITC");
